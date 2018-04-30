@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FEFCFE05C544B96A1992228 /* Pods_Mini_TokopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15165573D3C200E5F25DE09 /* Pods_Mini_TokopediaTests.framework */; };
+		AE4AEC35C9476229E34432BD /* Pods_Mini_Tokopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57ADB901060796551D599A /* Pods_Mini_Tokopedia.framework */; };
 		FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC4209738FF005CD40F /* AppDelegate.swift */; };
 		FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC6209738FF005CD40F /* ViewController.swift */; };
 		FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DC8209738FF005CD40F /* Main.storyboard */; };
 		FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCB20973900005CD40F /* Assets.xcassets */; };
 		FEFD8DCF20973900005CD40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */; };
 		FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */; };
+		FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83A02C586B2EC503F1D06918 /* Pods-Mini-Tokopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Tokopedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia.debug.xcconfig"; sourceTree = "<group>"; };
+		CD57ADB901060796551D599A /* Pods_Mini_Tokopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mini_Tokopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15165573D3C200E5F25DE09 /* Pods_Mini_TokopediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mini_TokopediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0CAB26BC181D9DAA983F3EC /* Pods-Mini-TokopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA0E2549CC4348C00CECA740 /* Pods-Mini-TokopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD85B4EA9F5ED1258CBB542 /* Pods-Mini-Tokopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Tokopedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia.release.xcconfig"; sourceTree = "<group>"; };
 		FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Tokopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFD8DC4209738FF005CD40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFD8DC6209738FF005CD40F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		FEFD8DD520973900005CD40F /* Mini-TokopediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-TokopediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_TokopediaTests.swift; sourceTree = "<group>"; };
 		FEFD8DDB20973900005CD40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4AEC35C9476229E34432BD /* Pods_Mini_Tokopedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEFCFE05C544B96A1992228 /* Pods_Mini_TokopediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7A0CC8AB08432D1DB880DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD57ADB901060796551D599A /* Pods_Mini_Tokopedia.framework */,
+				D15165573D3C200E5F25DE09 /* Pods_Mini_TokopediaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F41433AFFD51C6C34B8D4E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83A02C586B2EC503F1D06918 /* Pods-Mini-Tokopedia.debug.xcconfig */,
+				FAD85B4EA9F5ED1258CBB542 /* Pods-Mini-Tokopedia.release.xcconfig */,
+				EA0E2549CC4348C00CECA740 /* Pods-Mini-TokopediaTests.debug.xcconfig */,
+				E0CAB26BC181D9DAA983F3EC /* Pods-Mini-TokopediaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FEFD8DB8209738FF005CD40F = {
 			isa = PBXGroup;
 			children = (
 				FEFD8DC3209738FF005CD40F /* Mini-Tokopedia */,
 				FEFD8DD820973900005CD40F /* Mini-TokopediaTests */,
 				FEFD8DC2209738FF005CD40F /* Products */,
+				2F41433AFFD51C6C34B8D4E0 /* Pods */,
+				0E7A0CC8AB08432D1DB880DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,7 +111,12 @@
 		FEFD8DC3209738FF005CD40F /* Mini-Tokopedia */ = {
 			isa = PBXGroup;
 			children = (
-				FEFD8DC4209738FF005CD40F /* AppDelegate.swift */,
+				FEFD8DE920973D17005CD40F /* Entities */,
+				FEFD8DE820973D11005CD40F /* Views */,
+				FEFD8DE720973D02005CD40F /* Storyboards */,
+				FEFD8DE620973CFB005CD40F /* Interactors */,
+				FEFD8DE520973CF0005CD40F /* Adapters */,
+				FEFD8DE420973CE1005CD40F /* App */,
 				FEFD8DC6209738FF005CD40F /* ViewController.swift */,
 				FEFD8DC8209738FF005CD40F /* Main.storyboard */,
 				FEFD8DCB20973900005CD40F /* Assets.xcassets */,
@@ -96,6 +135,50 @@
 			path = "Mini-TokopediaTests";
 			sourceTree = "<group>";
 		};
+		FEFD8DE420973CE1005CD40F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DC4209738FF005CD40F /* AppDelegate.swift */,
+				FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FEFD8DE520973CF0005CD40F /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		FEFD8DE620973CFB005CD40F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		FEFD8DE720973D02005CD40F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FEFD8DE820973D11005CD40F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEFD8DE920973D17005CD40F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEFD8DDE20973900005CD40F /* Build configuration list for PBXNativeTarget "Mini-Tokopedia" */;
 			buildPhases = (
+				66BFA5E1E13EFA4F708CE2EF /* [CP] Check Pods Manifest.lock */,
 				FEFD8DBD209738FF005CD40F /* Sources */,
 				FEFD8DBE209738FF005CD40F /* Frameworks */,
 				FEFD8DBF209738FF005CD40F /* Resources */,
+				F2556C4AB40D162872EA923E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEFD8DE120973900005CD40F /* Build configuration list for PBXNativeTarget "Mini-TokopediaTests" */;
 			buildPhases = (
+				1E3D98942ED585C8910ED614 /* [CP] Check Pods Manifest.lock */,
 				FEFD8DD120973900005CD40F /* Sources */,
 				FEFD8DD220973900005CD40F /* Frameworks */,
 				FEFD8DD320973900005CD40F /* Resources */,
@@ -192,12 +278,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E3D98942ED585C8910ED614 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mini-TokopediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66BFA5E1E13EFA4F708CE2EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mini-Tokopedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2556C4AB40D162872EA923E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SegueManager/SegueManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SegueManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEFD8DBD209738FF005CD40F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */,
+				FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */,
 				FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,11 +510,13 @@
 		};
 		FEFD8DDF20973900005CD40F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A02C586B2EC503F1D06918 /* Pods-Mini-Tokopedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +530,13 @@
 		};
 		FEFD8DE020973900005CD40F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD85B4EA9F5ED1258CBB542 /* Pods-Mini-Tokopedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +550,7 @@
 		};
 		FEFD8DE220973900005CD40F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0E2549CC4348C00CECA740 /* Pods-Mini-TokopediaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +572,7 @@
 		};
 		FEFD8DE320973900005CD40F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0CAB26BC181D9DAA983F3EC /* Pods-Mini-TokopediaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
