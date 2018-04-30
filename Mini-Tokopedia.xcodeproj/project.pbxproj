@@ -9,15 +9,27 @@
 /* Begin PBXBuildFile section */
 		2FEFCFE05C544B96A1992228 /* Pods_Mini_TokopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15165573D3C200E5F25DE09 /* Pods_Mini_TokopediaTests.framework */; };
 		AE4AEC35C9476229E34432BD /* Pods_Mini_Tokopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57ADB901060796551D599A /* Pods_Mini_Tokopedia.framework */; };
+		FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */; };
 		FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC4209738FF005CD40F /* AppDelegate.swift */; };
-		FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC6209738FF005CD40F /* ViewController.swift */; };
 		FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DC8209738FF005CD40F /* Main.storyboard */; };
 		FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCB20973900005CD40F /* Assets.xcassets */; };
 		FEFD8DCF20973900005CD40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */; };
-		FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */; };
 		FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */; };
 		FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DF020974242005CD40F /* ApiClient.swift */; };
 		FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DF320974922005CD40F /* ApiClientTest.swift */; };
+		FEFD8DF72097587E005CD40F /* ProductApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DF62097587E005CD40F /* ProductApiService.swift */; };
+		FEFD8DF92097592A005CD40F /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DF82097592A005CD40F /* ProductResponse.swift */; };
+		FEFD8DFB20975CE8005CD40F /* ProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DFA20975CE8005CD40F /* ProductListResponse.swift */; };
+		FEFD8DFD20975E07005CD40F /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DFC20975E07005CD40F /* StatusResponse.swift */; };
+		FEFD8DFF20975E22005CD40F /* HeaderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DFE20975E22005CD40F /* HeaderResponse.swift */; };
+		FEFD8E0120976844005CD40F /* WholesalePriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E0020976844005CD40F /* WholesalePriceResponse.swift */; };
+		FEFD8E04209768ED005CD40F /* CategoryListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E03209768ED005CD40F /* CategoryListResponse.swift */; };
+		FEFD8E0620976A14005CD40F /* ShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E0520976A14005CD40F /* ShopResponse.swift */; };
+		FEFD8E0820976E75005CD40F /* LabelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E0720976E75005CD40F /* LabelResponse.swift */; };
+		FEFD8E0A209770EF005CD40F /* BadgeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E09209770EF005CD40F /* BadgeResponse.swift */; };
+		FEFD8E1020977DF1005CD40F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E0F20977DF1005CD40F /* MainViewController.swift */; };
+		FEFD8E122097903F005CD40F /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E112097903F005CD40F /* CategoryResponse.swift */; };
+		FEFD8E152097CE56005CD40F /* ProductApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8E142097CE56005CD40F /* ProductApiServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +49,31 @@
 		E0CAB26BC181D9DAA983F3EC /* Pods-Mini-TokopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA0E2549CC4348C00CECA740 /* Pods-Mini-TokopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD85B4EA9F5ED1258CBB542 /* Pods-Mini-Tokopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Tokopedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia.release.xcconfig"; sourceTree = "<group>"; };
+		FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseTestUtil.swift; sourceTree = "<group>"; };
 		FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Tokopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFD8DC4209738FF005CD40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEFD8DC6209738FF005CD40F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEFD8DC9209738FF005CD40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEFD8DCB20973900005CD40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEFD8DCE20973900005CD40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEFD8DD020973900005CD40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEFD8DD520973900005CD40F /* Mini-TokopediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-TokopediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_TokopediaTests.swift; sourceTree = "<group>"; };
 		FEFD8DDB20973900005CD40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 		FEFD8DF020974242005CD40F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		FEFD8DF320974922005CD40F /* ApiClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTest.swift; sourceTree = "<group>"; };
+		FEFD8DF62097587E005CD40F /* ProductApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductApiService.swift; sourceTree = "<group>"; };
+		FEFD8DF82097592A005CD40F /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		FEFD8DFA20975CE8005CD40F /* ProductListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListResponse.swift; sourceTree = "<group>"; };
+		FEFD8DFC20975E07005CD40F /* StatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
+		FEFD8DFE20975E22005CD40F /* HeaderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderResponse.swift; sourceTree = "<group>"; };
+		FEFD8E0020976844005CD40F /* WholesalePriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholesalePriceResponse.swift; sourceTree = "<group>"; };
+		FEFD8E03209768ED005CD40F /* CategoryListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListResponse.swift; sourceTree = "<group>"; };
+		FEFD8E0520976A14005CD40F /* ShopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopResponse.swift; sourceTree = "<group>"; };
+		FEFD8E0720976E75005CD40F /* LabelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelResponse.swift; sourceTree = "<group>"; };
+		FEFD8E09209770EF005CD40F /* BadgeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeResponse.swift; sourceTree = "<group>"; };
+		FEFD8E0F20977DF1005CD40F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FEFD8E112097903F005CD40F /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
+		FEFD8E142097CE56005CD40F /* ProductApiServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductApiServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +116,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FEDF449C2097D21F00968E32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FEFD8DB8209738FF005CD40F = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +153,6 @@
 				FEFD8DE620973CFB005CD40F /* Interactors */,
 				FEFD8DE520973CF0005CD40F /* Adapters */,
 				FEFD8DE420973CE1005CD40F /* App */,
-				FEFD8DC6209738FF005CD40F /* ViewController.swift */,
 				FEFD8DC8209738FF005CD40F /* Main.storyboard */,
 				FEFD8DCB20973900005CD40F /* Assets.xcassets */,
 				FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */,
@@ -133,8 +164,10 @@
 		FEFD8DD820973900005CD40F /* Mini-TokopediaTests */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF449C2097D21F00968E32 /* Utils */,
+				FEFD8DF52097582F005CD40F /* Mocks */,
+				FEFD8E132097CC59005CD40F /* AdapterTests */,
 				FEFD8DF2209748FE005CD40F /* IntegrationTests */,
-				FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */,
 				FEFD8DDB20973900005CD40F /* Info.plist */,
 			);
 			path = "Mini-TokopediaTests";
@@ -153,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFD8DF020974242005CD40F /* ApiClient.swift */,
+				FEFD8DF62097587E005CD40F /* ProductApiService.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -167,6 +201,7 @@
 		FEFD8DE720973D02005CD40F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD8E0F20977DF1005CD40F /* MainViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -181,6 +216,7 @@
 		FEFD8DE920973D17005CD40F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD8E0220976854005CD40F /* Responses */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -188,9 +224,41 @@
 		FEFD8DF2209748FE005CD40F /* IntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD8E142097CE56005CD40F /* ProductApiServiceTest.swift */,
 				FEFD8DF320974922005CD40F /* ApiClientTest.swift */,
 			);
 			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		FEFD8DF52097582F005CD40F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FEFD8E0220976854005CD40F /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DF82097592A005CD40F /* ProductResponse.swift */,
+				FEFD8DFA20975CE8005CD40F /* ProductListResponse.swift */,
+				FEFD8DFC20975E07005CD40F /* StatusResponse.swift */,
+				FEFD8DFE20975E22005CD40F /* HeaderResponse.swift */,
+				FEFD8E0020976844005CD40F /* WholesalePriceResponse.swift */,
+				FEFD8E03209768ED005CD40F /* CategoryListResponse.swift */,
+				FEFD8E0520976A14005CD40F /* ShopResponse.swift */,
+				FEFD8E0720976E75005CD40F /* LabelResponse.swift */,
+				FEFD8E09209770EF005CD40F /* BadgeResponse.swift */,
+				FEFD8E112097903F005CD40F /* CategoryResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		FEFD8E132097CC59005CD40F /* AdapterTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdapterTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,10 +438,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */,
+				FEFD8E0820976E75005CD40F /* LabelResponse.swift in Sources */,
+				FEFD8DF92097592A005CD40F /* ProductResponse.swift in Sources */,
+				FEFD8DFD20975E07005CD40F /* StatusResponse.swift in Sources */,
 				FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */,
 				FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */,
+				FEFD8E0A209770EF005CD40F /* BadgeResponse.swift in Sources */,
+				FEFD8DF72097587E005CD40F /* ProductApiService.swift in Sources */,
+				FEFD8E1020977DF1005CD40F /* MainViewController.swift in Sources */,
+				FEFD8E0620976A14005CD40F /* ShopResponse.swift in Sources */,
 				FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */,
+				FEFD8DFB20975CE8005CD40F /* ProductListResponse.swift in Sources */,
+				FEFD8DFF20975E22005CD40F /* HeaderResponse.swift in Sources */,
+				FEFD8E04209768ED005CD40F /* CategoryListResponse.swift in Sources */,
+				FEFD8E0120976844005CD40F /* WholesalePriceResponse.swift in Sources */,
+				FEFD8E122097903F005CD40F /* CategoryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +460,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */,
+				FEFD8E152097CE56005CD40F /* ProductApiServiceTest.swift in Sources */,
 				FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */,
+				FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +619,10 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -556,7 +639,10 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -573,7 +659,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -591,7 +681,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

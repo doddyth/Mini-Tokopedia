@@ -85,7 +85,7 @@ class ApiClient: ApiClientProtocol {
     }
     
     fileprivate func createURL(_ path: String) -> String {
-        return host + path;
+        return host + path
     }
     
 }

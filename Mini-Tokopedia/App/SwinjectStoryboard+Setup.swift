@@ -12,7 +12,7 @@ import SwinjectStoryboard
 
 extension SwinjectStoryboard {
     
-    class func setup() {
+    @objc class func setup() {
         registerStoryboards()
         registerViewModels()
         registerInteractors()
@@ -38,7 +38,13 @@ extension SwinjectStoryboard {
     }
     
     private class func registerAdapters() {
+        defaultContainer.register(ProductApiServiceProtocol.self) { r  in
+            ProductApiService(apiClient: r.resolve(ApiClientProtocol.self)!)
+        }
         
+        defaultContainer.register(ApiClientProtocol.self) { _ in
+            ApiClient()
+        }
     }
     
 }
