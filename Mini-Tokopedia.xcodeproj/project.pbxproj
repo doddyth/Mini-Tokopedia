@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC4209738FF005CD40F /* AppDelegate.swift */; };
+		FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC6209738FF005CD40F /* ViewController.swift */; };
+		FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DC8209738FF005CD40F /* Main.storyboard */; };
+		FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCB20973900005CD40F /* Assets.xcassets */; };
+		FEFD8DCF20973900005CD40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */; };
+		FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEFD8DD620973900005CD40F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEFD8DB9209738FF005CD40F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFD8DC0209738FF005CD40F;
+			remoteInfo = "Mini-Tokopedia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Tokopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFD8DC4209738FF005CD40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEFD8DC6209738FF005CD40F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEFD8DC9209738FF005CD40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEFD8DCB20973900005CD40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEFD8DCE20973900005CD40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEFD8DD020973900005CD40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEFD8DD520973900005CD40F /* Mini-TokopediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-TokopediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_TokopediaTests.swift; sourceTree = "<group>"; };
+		FEFD8DDB20973900005CD40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEFD8DBE209738FF005CD40F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFD8DD220973900005CD40F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEFD8DB8209738FF005CD40F = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DC3209738FF005CD40F /* Mini-Tokopedia */,
+				FEFD8DD820973900005CD40F /* Mini-TokopediaTests */,
+				FEFD8DC2209738FF005CD40F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEFD8DC2209738FF005CD40F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */,
+				FEFD8DD520973900005CD40F /* Mini-TokopediaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEFD8DC3209738FF005CD40F /* Mini-Tokopedia */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DC4209738FF005CD40F /* AppDelegate.swift */,
+				FEFD8DC6209738FF005CD40F /* ViewController.swift */,
+				FEFD8DC8209738FF005CD40F /* Main.storyboard */,
+				FEFD8DCB20973900005CD40F /* Assets.xcassets */,
+				FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */,
+				FEFD8DD020973900005CD40F /* Info.plist */,
+			);
+			path = "Mini-Tokopedia";
+			sourceTree = "<group>";
+		};
+		FEFD8DD820973900005CD40F /* Mini-TokopediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */,
+				FEFD8DDB20973900005CD40F /* Info.plist */,
+			);
+			path = "Mini-TokopediaTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEFD8DC0209738FF005CD40F /* Mini-Tokopedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFD8DDE20973900005CD40F /* Build configuration list for PBXNativeTarget "Mini-Tokopedia" */;
+			buildPhases = (
+				FEFD8DBD209738FF005CD40F /* Sources */,
+				FEFD8DBE209738FF005CD40F /* Frameworks */,
+				FEFD8DBF209738FF005CD40F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mini-Tokopedia";
+			productName = "Mini-Tokopedia";
+			productReference = FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEFD8DD420973900005CD40F /* Mini-TokopediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFD8DE120973900005CD40F /* Build configuration list for PBXNativeTarget "Mini-TokopediaTests" */;
+			buildPhases = (
+				FEFD8DD120973900005CD40F /* Sources */,
+				FEFD8DD220973900005CD40F /* Frameworks */,
+				FEFD8DD320973900005CD40F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFD8DD720973900005CD40F /* PBXTargetDependency */,
+			);
+			name = "Mini-TokopediaTests";
+			productName = "Mini-TokopediaTests";
+			productReference = FEFD8DD520973900005CD40F /* Mini-TokopediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEFD8DB9209738FF005CD40F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Doddy;
+				TargetAttributes = {
+					FEFD8DC0209738FF005CD40F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FEFD8DD420973900005CD40F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FEFD8DC0209738FF005CD40F;
+					};
+				};
+			};
+			buildConfigurationList = FEFD8DBC209738FF005CD40F /* Build configuration list for PBXProject "Mini-Tokopedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEFD8DB8209738FF005CD40F;
+			productRefGroup = FEFD8DC2209738FF005CD40F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEFD8DC0209738FF005CD40F /* Mini-Tokopedia */,
+				FEFD8DD420973900005CD40F /* Mini-TokopediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEFD8DBF209738FF005CD40F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFD8DCF20973900005CD40F /* LaunchScreen.storyboard in Resources */,
+				FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */,
+				FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFD8DD320973900005CD40F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEFD8DBD209738FF005CD40F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */,
+				FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFD8DD120973900005CD40F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEFD8DD720973900005CD40F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEFD8DC0209738FF005CD40F /* Mini-Tokopedia */;
+			targetProxy = FEFD8DD620973900005CD40F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEFD8DC8209738FF005CD40F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFD8DC9209738FF005CD40F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFD8DCE20973900005CD40F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEFD8DDC20973900005CD40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEFD8DDD20973900005CD40F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEFD8DDF20973900005CD40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA6UYG89K8;
+				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEFD8DE020973900005CD40F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA6UYG89K8;
+				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEFD8DE220973900005CD40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA6UYG89K8;
+				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini-Tokopedia.app/Mini-Tokopedia";
+			};
+			name = Debug;
+		};
+		FEFD8DE320973900005CD40F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA6UYG89K8;
+				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini-Tokopedia.app/Mini-Tokopedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEFD8DBC209738FF005CD40F /* Build configuration list for PBXProject "Mini-Tokopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFD8DDC20973900005CD40F /* Debug */,
+				FEFD8DDD20973900005CD40F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFD8DDE20973900005CD40F /* Build configuration list for PBXNativeTarget "Mini-Tokopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFD8DDF20973900005CD40F /* Debug */,
+				FEFD8DE020973900005CD40F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFD8DE120973900005CD40F /* Build configuration list for PBXNativeTarget "Mini-TokopediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFD8DE220973900005CD40F /* Debug */,
+				FEFD8DE320973900005CD40F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEFD8DB9209738FF005CD40F /* Project object */;
+}
