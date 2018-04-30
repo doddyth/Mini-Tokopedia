@@ -10,10 +10,13 @@ target 'Mini-Tokopedia' do
 pod 'Swinject'
 pod 'SwinjectStoryboard'
 pod 'RxSwift'
+pod 'RxBlocking'
 pod 'R.swift'
 pod 'SegueManager'
 pod 'SegueManager/R.swift'
 pod 'IQKeyboardManagerSwift'
+pod 'Kingfisher'
+pod 'Alamofire'
 
   target 'Mini-TokopediaTests' do
     inherit! :search_paths

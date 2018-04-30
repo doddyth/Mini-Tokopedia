@@ -16,6 +16,8 @@
 		FEFD8DCF20973900005CD40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */; };
 		FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */; };
 		FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */; };
+		FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DF020974242005CD40F /* ApiClient.swift */; };
+		FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DF320974922005CD40F /* ApiClientTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_TokopediaTests.swift; sourceTree = "<group>"; };
 		FEFD8DDB20973900005CD40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEFD8DEA20973D35005CD40F /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
+		FEFD8DF020974242005CD40F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		FEFD8DF320974922005CD40F /* ApiClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		FEFD8DD820973900005CD40F /* Mini-TokopediaTests */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD8DF2209748FE005CD40F /* IntegrationTests */,
 				FEFD8DD920973900005CD40F /* Mini_TokopediaTests.swift */,
 				FEFD8DDB20973900005CD40F /* Info.plist */,
 			);
@@ -147,6 +152,7 @@
 		FEFD8DE520973CF0005CD40F /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD8DF020974242005CD40F /* ApiClient.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -177,6 +183,14 @@
 			children = (
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		FEFD8DF2209748FE005CD40F /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD8DF320974922005CD40F /* ApiClientTest.swift */,
+			);
+			path = IntegrationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,8 +336,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SegueManager/SegueManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
@@ -331,8 +348,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SegueManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
@@ -353,6 +373,7 @@
 				FEFD8DC7209738FF005CD40F /* ViewController.swift in Sources */,
 				FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */,
 				FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */,
+				FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEFD8DDA20973900005CD40F /* Mini_TokopediaTests.swift in Sources */,
+				FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,10 +539,7 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -537,10 +556,7 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -557,11 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -579,11 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
