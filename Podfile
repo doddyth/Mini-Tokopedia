@@ -17,6 +17,8 @@ pod 'SegueManager/R.swift'
 pod 'IQKeyboardManagerSwift'
 pod 'Kingfisher'
 pod 'Alamofire'
+pod 'RxCocoa'
+pod 'UIScrollView-InfiniteScroll'
 
   target 'Mini-TokopediaTests' do
     inherit! :search_paths

@@ -39,9 +39,7 @@ struct CategoryListResponse: Codable {
                     self.data?.append(categoryResponse)
                 }
             }
-        } catch {
-            return;
-        }
+        } catch { return }
         
     }
 }

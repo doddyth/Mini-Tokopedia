@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2FEFCFE05C544B96A1992228 /* Pods_Mini_TokopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15165573D3C200E5F25DE09 /* Pods_Mini_TokopediaTests.framework */; };
 		AE4AEC35C9476229E34432BD /* Pods_Mini_Tokopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57ADB901060796551D599A /* Pods_Mini_Tokopedia.framework */; };
+		FE2DDB04209840BE00F800C5 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB03209840BE00F800C5 /* UIImageView+Utils.swift */; };
+		FE2DDB062098412200F800C5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB052098412200F800C5 /* ViewUtils.swift */; };
+		FE2DDB09209841E300F800C5 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */; };
 		FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */; };
 		FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */; };
 		FEDF44A32097DD0300968E32 /* DisplaySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */; };
@@ -22,6 +25,9 @@
 		FEDF44B62097E8AC00968E32 /* WholesalePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44B52097E8AC00968E32 /* WholesalePrice.swift */; };
 		FEDF44B92097F0B400968E32 /* ProductViewParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44B82097F0B400968E32 /* ProductViewParam.swift */; };
 		FEDF44BB2097F81400968E32 /* ProductApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44BA2097F81400968E32 /* ProductApiServiceMock.swift */; };
+		FEDF44BE209804E700968E32 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44BD209804E700968E32 /* MainViewModel.swift */; };
+		FEDF44C1209809CD00968E32 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44BF209809CD00968E32 /* ProductCollectionViewCell.swift */; };
+		FEDF44C2209809CD00968E32 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDF44C0209809CD00968E32 /* ProductCollectionViewCell.xib */; };
 		FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC4209738FF005CD40F /* AppDelegate.swift */; };
 		FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DC8209738FF005CD40F /* Main.storyboard */; };
 		FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCB20973900005CD40F /* Assets.xcassets */; };
@@ -61,6 +67,9 @@
 		E0CAB26BC181D9DAA983F3EC /* Pods-Mini-TokopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA0E2549CC4348C00CECA740 /* Pods-Mini-TokopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD85B4EA9F5ED1258CBB542 /* Pods-Mini-Tokopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Tokopedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia.release.xcconfig"; sourceTree = "<group>"; };
+		FE2DDB03209840BE00F800C5 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
+		FE2DDB052098412200F800C5 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
 		FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseTestUtil.swift; sourceTree = "<group>"; };
 		FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResultTest.swift; sourceTree = "<group>"; };
 		FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResult.swift; sourceTree = "<group>"; };
@@ -74,6 +83,9 @@
 		FEDF44B52097E8AC00968E32 /* WholesalePrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholesalePrice.swift; sourceTree = "<group>"; };
 		FEDF44B82097F0B400968E32 /* ProductViewParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewParam.swift; sourceTree = "<group>"; };
 		FEDF44BA2097F81400968E32 /* ProductApiServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductApiServiceMock.swift; sourceTree = "<group>"; };
+		FEDF44BD209804E700968E32 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FEDF44BF209809CD00968E32 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		FEDF44C0209809CD00968E32 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Tokopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFD8DC4209738FF005CD40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFD8DC9209738FF005CD40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +152,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE2DDB07209841CE00F800C5 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
 		FEDF449C2097D21F00968E32 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				FEDF44AD2097E74600968E32 /* Date+Utils.swift */,
+				FE2DDB03209840BE00F800C5 /* UIImageView+Utils.swift */,
+				FE2DDB052098412200F800C5 /* ViewUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -170,6 +192,14 @@
 				FEDF44B82097F0B400968E32 /* ProductViewParam.swift */,
 			);
 			path = ViewParams;
+			sourceTree = "<group>";
+		};
+		FEDF44BC209804C600968E32 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF44BD209804E700968E32 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		FEFD8DB8209738FF005CD40F = {
@@ -198,6 +228,7 @@
 				FEDF44AC2097E73500968E32 /* Utils */,
 				FEFD8DE920973D17005CD40F /* Entities */,
 				FEFD8DE820973D11005CD40F /* Views */,
+				FEDF44BC209804C600968E32 /* ViewModels */,
 				FEFD8DE720973D02005CD40F /* Storyboards */,
 				FEFD8DE620973CFB005CD40F /* Interactors */,
 				FEFD8DE520973CF0005CD40F /* Adapters */,
@@ -213,6 +244,7 @@
 		FEFD8DD820973900005CD40F /* Mini-TokopediaTests */ = {
 			isa = PBXGroup;
 			children = (
+				FE2DDB07209841CE00F800C5 /* ViewModelTests */,
 				FEDF449F2097DC0B00968E32 /* InteractorTests */,
 				FEFD8DF2209748FE005CD40F /* IntegrationTests */,
 				FEFD8DF52097582F005CD40F /* Mocks */,
@@ -259,6 +291,8 @@
 		FEFD8DE820973D11005CD40F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF44BF209809CD00968E32 /* ProductCollectionViewCell.swift */,
+				FEDF44C0209809CD00968E32 /* ProductCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,6 +433,7 @@
 			files = (
 				FEFD8DCF20973900005CD40F /* LaunchScreen.storyboard in Resources */,
 				FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */,
+				FEDF44C2209809CD00968E32 /* ProductCollectionViewCell.xib in Resources */,
 				FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,10 +496,12 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SegueManager/SegueManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -473,10 +510,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SegueManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIScrollView_InfiniteScroll.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -495,6 +534,7 @@
 				FEDF44AB2097E5C500968E32 /* ProductResponse+Converter.swift in Sources */,
 				FEFD8DFD20975E07005CD40F /* StatusResponse.swift in Sources */,
 				FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */,
+				FEDF44BE209804E700968E32 /* MainViewModel.swift in Sources */,
 				FEDF44B02097E7AE00968E32 /* Label.swift in Sources */,
 				FEDF44AE2097E74600968E32 /* Date+Utils.swift in Sources */,
 				FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */,
@@ -505,7 +545,9 @@
 				FEFD8E1020977DF1005CD40F /* MainViewController.swift in Sources */,
 				FEDF44B22097E80500968E32 /* Badge.swift in Sources */,
 				FEFD8E0620976A14005CD40F /* ShopResponse.swift in Sources */,
+				FEDF44C1209809CD00968E32 /* ProductCollectionViewCell.swift in Sources */,
 				FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */,
+				FE2DDB04209840BE00F800C5 /* UIImageView+Utils.swift in Sources */,
 				FEDF44B92097F0B400968E32 /* ProductViewParam.swift in Sources */,
 				FEFD8DFB20975CE8005CD40F /* ProductListResponse.swift in Sources */,
 				FEFD8DFF20975E22005CD40F /* HeaderResponse.swift in Sources */,
@@ -514,6 +556,7 @@
 				FEFD8E122097903F005CD40F /* CategoryResponse.swift in Sources */,
 				FEDF44B42097E83D00968E32 /* Shop.swift in Sources */,
 				FEDF44B62097E8AC00968E32 /* WholesalePrice.swift in Sources */,
+				FE2DDB062098412200F800C5 /* ViewUtils.swift in Sources */,
 				FEDF44A32097DD0300968E32 /* DisplaySearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEFD8E152097CE56005CD40F /* ProductApiServiceTest.swift in Sources */,
+				FE2DDB09209841E300F800C5 /* MainViewModelTest.swift in Sources */,
 				FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */,
 				FEDF44BB2097F81400968E32 /* ProductApiServiceMock.swift in Sources */,
 				FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */,
@@ -683,10 +727,7 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -703,10 +744,7 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -723,11 +761,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -745,11 +779,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

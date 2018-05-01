@@ -26,11 +26,15 @@ extension SwinjectStoryboard {
     //MARK: - Private
     
     private class func registerStoryboards() {
-        
+        defaultContainer.storyboardInitCompleted(MainViewController.self) { r, c in
+            c.mainViewModel = r.resolve(MainViewModel.self)!
+        }
     }
     
     private class func registerViewModels() {
-        
+        defaultContainer.register(MainViewModel.self) { r in
+            MainViewModel(displaySearchResult: r.resolve(DisplaySearchResultProtocol.self)!)
+        }
     }
     
     private class func registerInteractors() {
