@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct ProductViewParam {
+    var id: String = ""
+    var name: String = ""
+    var price: String = ""
+    var imageURL: String = ""
+    
+    static func create(_ product: Product) -> ProductViewParam {
+        var productViewParam = ProductViewParam()
+        productViewParam.id = product.id
+        productViewParam.name = product.name
+        productViewParam.price = product.price
+        productViewParam.imageURL = product.imageURL
+        
+        return productViewParam
+    }
+}

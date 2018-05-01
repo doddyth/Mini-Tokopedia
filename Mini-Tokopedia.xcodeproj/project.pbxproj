@@ -10,6 +10,8 @@
 		2FEFCFE05C544B96A1992228 /* Pods_Mini_TokopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15165573D3C200E5F25DE09 /* Pods_Mini_TokopediaTests.framework */; };
 		AE4AEC35C9476229E34432BD /* Pods_Mini_Tokopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD57ADB901060796551D599A /* Pods_Mini_Tokopedia.framework */; };
 		FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */; };
+		FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */; };
+		FEDF44A32097DD0300968E32 /* DisplaySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */; };
 		FEDF44A52097DE0400968E32 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A42097DE0400968E32 /* Product.swift */; };
 		FEDF44A92097E57100968E32 /* ProductListResponse+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A82097E57100968E32 /* ProductListResponse+Converter.swift */; };
 		FEDF44AB2097E5C500968E32 /* ProductResponse+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44AA2097E5C500968E32 /* ProductResponse+Converter.swift */; };
@@ -18,6 +20,8 @@
 		FEDF44B22097E80500968E32 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44B12097E80500968E32 /* Badge.swift */; };
 		FEDF44B42097E83D00968E32 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44B32097E83D00968E32 /* Shop.swift */; };
 		FEDF44B62097E8AC00968E32 /* WholesalePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44B52097E8AC00968E32 /* WholesalePrice.swift */; };
+		FEDF44B92097F0B400968E32 /* ProductViewParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44B82097F0B400968E32 /* ProductViewParam.swift */; };
+		FEDF44BB2097F81400968E32 /* ProductApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44BA2097F81400968E32 /* ProductApiServiceMock.swift */; };
 		FEFD8DC5209738FF005CD40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD8DC4209738FF005CD40F /* AppDelegate.swift */; };
 		FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DC8209738FF005CD40F /* Main.storyboard */; };
 		FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFD8DCB20973900005CD40F /* Assets.xcassets */; };
@@ -58,6 +62,8 @@
 		EA0E2549CC4348C00CECA740 /* Pods-Mini-TokopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-TokopediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-TokopediaTests/Pods-Mini-TokopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD85B4EA9F5ED1258CBB542 /* Pods-Mini-Tokopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Tokopedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia.release.xcconfig"; sourceTree = "<group>"; };
 		FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseTestUtil.swift; sourceTree = "<group>"; };
+		FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResultTest.swift; sourceTree = "<group>"; };
+		FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResult.swift; sourceTree = "<group>"; };
 		FEDF44A42097DE0400968E32 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FEDF44A82097E57100968E32 /* ProductListResponse+Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListResponse+Converter.swift"; sourceTree = "<group>"; };
 		FEDF44AA2097E5C500968E32 /* ProductResponse+Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductResponse+Converter.swift"; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 		FEDF44B12097E80500968E32 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		FEDF44B32097E83D00968E32 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		FEDF44B52097E8AC00968E32 /* WholesalePrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholesalePrice.swift; sourceTree = "<group>"; };
+		FEDF44B82097F0B400968E32 /* ProductViewParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewParam.swift; sourceTree = "<group>"; };
+		FEDF44BA2097F81400968E32 /* ProductApiServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductApiServiceMock.swift; sourceTree = "<group>"; };
 		FEFD8DC1209738FF005CD40F /* Mini-Tokopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Tokopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFD8DC4209738FF005CD40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFD8DC9209738FF005CD40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,12 +148,28 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FEDF449F2097DC0B00968E32 /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */,
+			);
+			path = InteractorTests;
+			sourceTree = "<group>";
+		};
 		FEDF44AC2097E73500968E32 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				FEDF44AD2097E74600968E32 /* Date+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FEDF44B72097F09800968E32 /* ViewParams */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF44B82097F0B400968E32 /* ProductViewParam.swift */,
+			);
+			path = ViewParams;
 			sourceTree = "<group>";
 		};
 		FEFD8DB8209738FF005CD40F = {
@@ -189,6 +213,7 @@
 		FEFD8DD820973900005CD40F /* Mini-TokopediaTests */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF449F2097DC0B00968E32 /* InteractorTests */,
 				FEFD8DF2209748FE005CD40F /* IntegrationTests */,
 				FEFD8DF52097582F005CD40F /* Mocks */,
 				FEDF449C2097D21F00968E32 /* Utils */,
@@ -218,6 +243,7 @@
 		FEFD8DE620973CFB005CD40F /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -240,6 +266,7 @@
 		FEFD8DE920973D17005CD40F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF44B72097F09800968E32 /* ViewParams */,
 				FEFD8E0220976854005CD40F /* Responses */,
 				FEDF44A42097DE0400968E32 /* Product.swift */,
 				FEDF44AF2097E7AE00968E32 /* Label.swift */,
@@ -262,6 +289,7 @@
 		FEFD8DF52097582F005CD40F /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF44BA2097F81400968E32 /* ProductApiServiceMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -478,6 +506,7 @@
 				FEDF44B22097E80500968E32 /* Badge.swift in Sources */,
 				FEFD8E0620976A14005CD40F /* ShopResponse.swift in Sources */,
 				FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */,
+				FEDF44B92097F0B400968E32 /* ProductViewParam.swift in Sources */,
 				FEFD8DFB20975CE8005CD40F /* ProductListResponse.swift in Sources */,
 				FEFD8DFF20975E22005CD40F /* HeaderResponse.swift in Sources */,
 				FEFD8E04209768ED005CD40F /* CategoryListResponse.swift in Sources */,
@@ -485,6 +514,7 @@
 				FEFD8E122097903F005CD40F /* CategoryResponse.swift in Sources */,
 				FEDF44B42097E83D00968E32 /* Shop.swift in Sources */,
 				FEDF44B62097E8AC00968E32 /* WholesalePrice.swift in Sources */,
+				FEDF44A32097DD0300968E32 /* DisplaySearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +524,9 @@
 			files = (
 				FEFD8E152097CE56005CD40F /* ProductApiServiceTest.swift in Sources */,
 				FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */,
+				FEDF44BB2097F81400968E32 /* ProductApiServiceMock.swift in Sources */,
 				FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */,
+				FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

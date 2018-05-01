@@ -34,11 +34,13 @@ extension SwinjectStoryboard {
     }
     
     private class func registerInteractors() {
-        
+        defaultContainer.register(DisplaySearchResultProtocol.self) { r in
+            DisplaySearchResult(productApiService: r.resolve(ProductApiServiceProtocol.self)!)
+        }
     }
     
     private class func registerAdapters() {
-        defaultContainer.register(ProductApiServiceProtocol.self) { r  in
+        defaultContainer.register(ProductApiServiceProtocol.self) { r in
             ProductApiService(apiClient: r.resolve(ApiClientProtocol.self)!)
         }
         
