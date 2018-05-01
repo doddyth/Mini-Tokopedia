@@ -44,4 +44,20 @@ struct ShopResponse: Codable {
         self.city = try container.decode(String.self, forKey: .city)
     }
 
+    func extractShop() -> Shop {
+        var shop = Shop()
+        if let id = self.id { shop.id = id }
+        if let name = self.name { shop.name = name }
+        if let URL = self.URL { shop.URL = URL }
+        if let isGold = self.isGold { shop.isGold = isGold }
+        if let rating = self.rating { shop.rating = rating }
+        if let location = self.location { shop.location = location }
+        if let reputationImageURL = self.reputationImageURL {
+            shop.reputationImageURL = reputationImageURL
+        }
+        if let shopLucky = self.shopLucky { shop.shopLucky = shopLucky }
+        if let city = self.city { shop.city = city }
+        
+        return shop
+    }
 }

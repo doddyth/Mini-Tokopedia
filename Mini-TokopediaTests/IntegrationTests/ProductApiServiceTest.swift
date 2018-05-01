@@ -29,7 +29,7 @@ class ProductApiServiceTest: XCTestCase {
             .toBlocking()
             .first()!
         
-        ApiResponseTestUtil.assertProductListResponse(searchResult)
+        ApiResponseTestUtil.assertProducts(searchResult)
     }
     
     func testGetProductsByKeywordWhenKeywordEmpty() {
@@ -39,7 +39,7 @@ class ProductApiServiceTest: XCTestCase {
             .toBlocking()
             .first()!
         
-        ApiResponseTestUtil.assertEmptyProductListResponse(searchResult)
+        XCTAssertEqual(searchResult.count, 0)
     }
     
     func testGetProductsByKeywordWhenPageLessThanZero() {

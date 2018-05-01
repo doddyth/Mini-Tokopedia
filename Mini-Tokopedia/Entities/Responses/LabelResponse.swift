@@ -24,4 +24,11 @@ struct LabelResponse: Codable {
         self.color = try container.decode(String.self, forKey: .color)
     }
     
+    func extractLabel() -> Label {
+        var label = Label()
+        if let title = title { label.title = title }
+        if let color = color { label.color = color }
+        
+        return label
+    }
 }

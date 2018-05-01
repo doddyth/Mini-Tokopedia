@@ -23,4 +23,12 @@ struct BadgeResponse: Codable {
         self.title = try container.decode(String.self, forKey: .title)
         self.imageURL = try container.decode(String.self, forKey: .imageURL)
     }
+    
+    func extractBadge() -> Badge {
+        var badge = Badge()
+        if let title = self.title { badge.title = title }
+        if let imageURL = self.imageURL { badge.imageURL = imageURL }
+        
+        return badge
+    }
 }

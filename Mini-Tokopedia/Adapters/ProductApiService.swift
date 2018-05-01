@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol ProductApiServiceProtocol {
-    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int) -> Observable<ProductListResponse>
+    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int) -> Observable<[Product]>
 }
 
 class ProductApiService: ProductApiServiceProtocol {
@@ -18,14 +18,13 @@ class ProductApiService: ProductApiServiceProtocol {
     fileprivate var apiClient: ApiClientProtocol
     
     fileprivate let searchPath: String = "search/v2.5/product"
-    fileprivate static let defaultPageCount: Int = 10
     
     init(apiClient: ApiClientProtocol) {
         self.apiClient = apiClient
     }
     
-    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int = defaultPageCount)
-        -> Observable<ProductListResponse> {
+    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int)
+        -> Observable<[Product]> {
             guard page > 0 && pageCount > 0 else {
                 let error = NSError(domain: "com.minitokopedia",
                                     code: 0,
@@ -36,21 +35,22 @@ class ProductApiService: ProductApiServiceProtocol {
             let searchFullPath = constructSearchFullPath(keyword,
                                                          page: page,
                                                          pageCount: pageCount)
-            return apiClient.getString(searchFullPath, headers: [:])
+            return apiClient.getString(searchFullPath, headers: Dictionary<String, String>())
                 .map { jsonString -> Data in
                     Data(jsonString.utf8)
                 }
-                .flatMap { data -> Observable<ProductListResponse> in
+                .flatMap { data -> Observable<[Product]> in
                     let jsonDecoder = JSONDecoder()
                     
                     do {
                         let productListResponse =
                             try jsonDecoder.decode(ProductListResponse.self, from: data)
-                        return Observable.just(productListResponse)
+                        let products = productListResponse.extractProducts()
+                        return Observable.just(products)
                     } catch let error as NSError {
                         return Observable.error(error)
                     }
-            }
+                }
     }
     
     //MARK: - Private

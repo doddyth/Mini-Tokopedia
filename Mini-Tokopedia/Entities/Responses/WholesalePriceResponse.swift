@@ -26,4 +26,12 @@ struct WholesalePriceResponse: Codable {
         self.price = try container.decode(String.self, forKey: .price)
     }
     
+    func extractWholesalePrice() -> WholesalePrice {
+        var wholesalePrice = WholesalePrice()
+        if let countMin = self.countMin { wholesalePrice.countMin = countMin }
+        if let countMax = self.countMax { wholesalePrice.countMax = countMax }
+        if let price = self.price { wholesalePrice.price = price }
+        
+        return wholesalePrice
+    }
 }
