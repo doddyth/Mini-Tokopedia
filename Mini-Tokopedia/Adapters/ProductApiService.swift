@@ -10,7 +10,8 @@ import Foundation
 import RxSwift
 
 protocol ProductApiServiceProtocol {
-    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int) -> Observable<[Product]>
+    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int,
+                     filterInfo: FilterInfo?) -> Observable<[Product]>
 }
 
 class ProductApiService: ProductApiServiceProtocol {
@@ -23,7 +24,8 @@ class ProductApiService: ProductApiServiceProtocol {
         self.apiClient = apiClient
     }
     
-    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int)
+    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int,
+                     filterInfo: FilterInfo?)
         -> Observable<[Product]> {
             guard page > 0 && pageCount > 0 else {
                 let error = NSError(domain: "com.minitokopedia",
@@ -34,7 +36,8 @@ class ProductApiService: ProductApiServiceProtocol {
             
             let searchFullPath = constructSearchFullPath(keyword,
                                                          page: page,
-                                                         pageCount: pageCount)
+                                                         pageCount: pageCount,
+                                                         filterInfo: filterInfo)
             return apiClient.getString(searchFullPath, headers: Dictionary<String, String>())
                 .map { jsonString -> Data in
                     Data(jsonString.utf8)
@@ -55,8 +58,16 @@ class ProductApiService: ProductApiServiceProtocol {
     
     //MARK: - Private
     
-    fileprivate func constructSearchFullPath(_ keyword: String, page: Int, pageCount: Int) -> String {
+    fileprivate func constructSearchFullPath(_ keyword: String,
+                                             page: Int,
+                                             pageCount: Int,
+                                             filterInfo: FilterInfo?) -> String {
         let start = (page - 1) * pageCount
-        return "\(searchPath)?q=\(keyword)&start=\(start)&rows=\(pageCount)"
+        let initialPath = "\(searchPath)?q=\(keyword)&start=\(start)&rows=\(pageCount)"
+        
+        guard let filterInfo = filterInfo else { return initialPath }
+        
+        return initialPath + "&pmin=\(filterInfo.minPrice)&pmax=\(filterInfo.maxPrice)" +
+        "&wholesale=\(filterInfo.isWholeSale ? "true" : "false")"
     }
 }

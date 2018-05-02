@@ -26,7 +26,8 @@ class DisplaySearchResult: DisplaySearchResultProtocol {
         -> Observable<[ProductViewParam]> {
             return productApiService.getProducts(byKeyword: keyword,
                                                  page: page,
-                                                 pageCount: pageCount)
+                                                 pageCount: pageCount,
+                                                 filterInfo: nil)
                 .map { products -> [ProductViewParam] in
                     products.map{ ProductViewParam.create($0) }
                 }

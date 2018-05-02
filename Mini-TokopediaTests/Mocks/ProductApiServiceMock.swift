@@ -11,7 +11,8 @@ import RxSwift
 
 @testable import Mini_Tokopedia
 class ProductApiServiceSuccessMock: ProductApiServiceProtocol {
-    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int)
+    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int,
+                     filterInfo: FilterInfo?)
         -> Observable<[Product]> {
             var product = Product()
             product.id = "id"
@@ -23,7 +24,8 @@ class ProductApiServiceSuccessMock: ProductApiServiceProtocol {
 }
 
 class ProductApiServiceFailMock: ProductApiServiceProtocol {
-    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int)
+    func getProducts(byKeyword keyword: String, page: Int, pageCount: Int,
+                     filterInfo: FilterInfo?)
         -> Observable<[Product]> {
             return Observable.error(NSError())
     }

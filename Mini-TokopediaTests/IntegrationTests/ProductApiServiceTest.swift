@@ -25,7 +25,23 @@ class ProductApiServiceTest: XCTestCase {
     func testGetProductsByKeyword() {
         let searchResult = try! productApiService!.getProducts(byKeyword: "samsung",
                                                                page: 1,
-                                                               pageCount: 1)
+                                                               pageCount: 1,
+                                                               filterInfo: nil)
+            .toBlocking()
+            .first()!
+        
+        ApiResponseTestUtil.assertProducts(searchResult)
+    }
+    
+    func testGetProductsByKeywordWithFilterInfo() {
+        let filterInfo = FilterInfo(minPrice: 100,
+                                    maxPrice: 100000,
+                                    isWholeSale: true,
+                                    shopTypes: [])
+        let searchResult = try! productApiService!.getProducts(byKeyword: "samsung",
+                                                               page: 1,
+                                                               pageCount: 1,
+                                                               filterInfo: filterInfo)
             .toBlocking()
             .first()!
         
@@ -35,7 +51,8 @@ class ProductApiServiceTest: XCTestCase {
     func testGetProductsByKeywordWhenKeywordEmpty() {
         let searchResult = try! productApiService!.getProducts(byKeyword: "",
                                                                page: 1,
-                                                               pageCount: 1)
+                                                               pageCount: 1,
+                                                               filterInfo: nil)
             .toBlocking()
             .first()!
         
@@ -47,7 +64,8 @@ class ProductApiServiceTest: XCTestCase {
         
         productApiService!.getProducts(byKeyword: "samsung",
                                        page: -1,
-                                       pageCount: 1)
+                                       pageCount: 1,
+                                       filterInfo: nil)
             .subscribe(
                 onError: { error in
                     let error = error as NSError
@@ -65,7 +83,8 @@ class ProductApiServiceTest: XCTestCase {
         
         productApiService!.getProducts(byKeyword: "samsung",
                                        page: 1,
-                                       pageCount: -1)
+                                       pageCount: -1,
+                                       filterInfo: nil)
             .subscribe(
                 onError: { error in
                     let error = error as NSError

@@ -12,6 +12,7 @@
 		FE2DDB04209840BE00F800C5 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB03209840BE00F800C5 /* UIImageView+Utils.swift */; };
 		FE2DDB062098412200F800C5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB052098412200F800C5 /* ViewUtils.swift */; };
 		FE2DDB09209841E300F800C5 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */; };
+		FE88ADC22099373300DDA696 /* FilterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC12099373300DDA696 /* FilterInfo.swift */; };
 		FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */; };
 		FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */; };
 		FEDF44A32097DD0300968E32 /* DisplaySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */; };
@@ -70,6 +71,7 @@
 		FE2DDB03209840BE00F800C5 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
 		FE2DDB052098412200F800C5 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
+		FE88ADC12099373300DDA696 /* FilterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInfo.swift; sourceTree = "<group>"; };
 		FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseTestUtil.swift; sourceTree = "<group>"; };
 		FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResultTest.swift; sourceTree = "<group>"; };
 		FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResult.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				FEDF44B12097E80500968E32 /* Badge.swift */,
 				FEDF44B32097E83D00968E32 /* Shop.swift */,
 				FEDF44B52097E8AC00968E32 /* WholesalePrice.swift */,
+				FE88ADC12099373300DDA696 /* FilterInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 			files = (
 				FEFD8E0820976E75005CD40F /* LabelResponse.swift in Sources */,
 				FEFD8DF92097592A005CD40F /* ProductResponse.swift in Sources */,
+				FE88ADC22099373300DDA696 /* FilterInfo.swift in Sources */,
 				FEDF44AB2097E5C500968E32 /* ProductResponse+Converter.swift in Sources */,
 				FEFD8DFD20975E07005CD40F /* StatusResponse.swift in Sources */,
 				FEFD8DEB20973D35005CD40F /* SwinjectStoryboard+Setup.swift in Sources */,
