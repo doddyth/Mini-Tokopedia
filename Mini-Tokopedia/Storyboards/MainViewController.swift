@@ -9,16 +9,28 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Rswift
 import UIScrollView_InfiniteScroll
+import SegueManager
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, SeguePerformer {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
     
     var mainViewModel: MainViewModel!
+    var segueManager: SegueManager {
+        guard let segueManagerObject = segueManagerObject
+            else { return SegueManager(viewController: UIViewController()) }
+        return segueManagerObject
+    }
     
+    fileprivate var segueManagerObject: SegueManager?
     fileprivate let disposeBag = DisposeBag()
     fileprivate let PADDING_SIZE: CGFloat = 8
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segueManager.prepare(for: segue)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +38,20 @@ class MainViewController: UIViewController {
         setupCollectionView()
         setupMainViewModel()
         mainViewModel.didLoad()
+        
+        segueManagerObject = SegueManager(viewController: self)
+    }
+    
+    //MARK: - IBActions
+    
+    @IBAction func filterButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "openFilterPage") { [weak self] segue in
+            guard let filterViewController: FilterViewController = segue.destination
+                as? FilterViewController else { return }
+            
+            filterViewController.delegate = self
+            filterViewController.currentFilterInfo = self?.mainViewModel.currentFilterInfo
+        }
     }
     
     //MARK: - Private
@@ -68,4 +94,12 @@ class MainViewController: UIViewController {
             }
             .disposed(by: disposeBag)
     }
+}
+
+extension MainViewController: FilterViewControllerDelegate {
+    
+    func filterApplied(withInfo filterInfo: FilterInfo) {
+        mainViewModel.filterApplied(withInfo: filterInfo)
+    }
+    
 }

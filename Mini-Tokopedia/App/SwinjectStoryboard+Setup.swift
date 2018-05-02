@@ -29,11 +29,19 @@ extension SwinjectStoryboard {
         defaultContainer.storyboardInitCompleted(MainViewController.self) { r, c in
             c.mainViewModel = r.resolve(MainViewModel.self)!
         }
+        
+        defaultContainer.storyboardInitCompleted(FilterViewController.self) { r, c in
+            c.filterViewModel = r.resolve(FilterViewModel.self)!
+        }
     }
     
     private class func registerViewModels() {
         defaultContainer.register(MainViewModel.self) { r in
             MainViewModel(displaySearchResult: r.resolve(DisplaySearchResultProtocol.self)!)
+        }
+        
+        defaultContainer.register(FilterViewModel.self) { r in
+            FilterViewModel()
         }
     }
     

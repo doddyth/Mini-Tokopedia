@@ -84,4 +84,30 @@ class MainViewModelTest: XCTestCase {
         
         waitForExpectations(timeout: 10, handler: nil)
     }
+    
+    func testFilterApplied() {
+        let productViewParamsExpectation = expectation(description: "should send event product view params")
+        productViewParamsExpectation.expectedFulfillmentCount = 4
+        
+        var counter: Int = 0
+        mainViewModel?.productViewParams
+            .asObservable()
+            .subscribe(onNext: { products in
+                if counter == 1 {
+                    XCTAssertEqual(products.count, 10)
+                } else if counter == 2 {
+                    XCTAssertEqual(products.count, 0)
+                } else if counter == 3 {
+                    XCTAssertEqual(products.count, 10)
+                }
+                
+                productViewParamsExpectation.fulfill()
+                counter += 1
+            })
+        
+        mainViewModel?.didLoad()
+        mainViewModel?.filterApplied(withInfo: FilterInfo())
+        
+        waitForExpectations(timeout: 1, handler: nil)
+    }
 }

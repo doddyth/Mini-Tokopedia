@@ -13,6 +13,13 @@
 		FE2DDB062098412200F800C5 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB052098412200F800C5 /* ViewUtils.swift */; };
 		FE2DDB09209841E300F800C5 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */; };
 		FE88ADC22099373300DDA696 /* FilterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC12099373300DDA696 /* FilterInfo.swift */; };
+		FE88ADC42099379E00DDA696 /* NSNumber+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC32099379E00DDA696 /* NSNumber+Utils.swift */; };
+		FE88ADC620996B1400DDA696 /* ShopTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC520996B1400DDA696 /* ShopTypeViewController.swift */; };
+		FE88ADC82099859E00DDA696 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC72099859E00DDA696 /* FilterViewModel.swift */; };
+		FE88ADCA209988DA00DDA696 /* FilterViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC9209988DA00DDA696 /* FilterViewModelTest.swift */; };
+		FE88ADCD209991DC00DDA696 /* ShopTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADCB209991DC00DDA696 /* ShopTypeCollectionViewCell.swift */; };
+		FE88ADCE209991DC00DDA696 /* ShopTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE88ADCC209991DC00DDA696 /* ShopTypeCollectionViewCell.xib */; };
+		FEBC9D902098B66A00B56220 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBC9D8F2098B66A00B56220 /* FilterViewController.swift */; };
 		FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */; };
 		FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */; };
 		FEDF44A32097DD0300968E32 /* DisplaySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */; };
@@ -72,6 +79,13 @@
 		FE2DDB052098412200F800C5 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
 		FE88ADC12099373300DDA696 /* FilterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInfo.swift; sourceTree = "<group>"; };
+		FE88ADC32099379E00DDA696 /* NSNumber+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Utils.swift"; sourceTree = "<group>"; };
+		FE88ADC520996B1400DDA696 /* ShopTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTypeViewController.swift; sourceTree = "<group>"; };
+		FE88ADC72099859E00DDA696 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		FE88ADC9209988DA00DDA696 /* FilterViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModelTest.swift; sourceTree = "<group>"; };
+		FE88ADCB209991DC00DDA696 /* ShopTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE88ADCC209991DC00DDA696 /* ShopTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		FEBC9D8F2098B66A00B56220 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseTestUtil.swift; sourceTree = "<group>"; };
 		FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResultTest.swift; sourceTree = "<group>"; };
 		FEDF44A22097DD0300968E32 /* DisplaySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResult.swift; sourceTree = "<group>"; };
@@ -158,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				FE2DDB08209841E300F800C5 /* MainViewModelTest.swift */,
+				FE88ADC9209988DA00DDA696 /* FilterViewModelTest.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -184,6 +199,7 @@
 				FEDF44AD2097E74600968E32 /* Date+Utils.swift */,
 				FE2DDB03209840BE00F800C5 /* UIImageView+Utils.swift */,
 				FE2DDB052098412200F800C5 /* ViewUtils.swift */,
+				FE88ADC32099379E00DDA696 /* NSNumber+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -200,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				FEDF44BD209804E700968E32 /* MainViewModel.swift */,
+				FE88ADC72099859E00DDA696 /* FilterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,15 +244,14 @@
 		FEFD8DC3209738FF005CD40F /* Mini-Tokopedia */ = {
 			isa = PBXGroup;
 			children = (
-				FEDF44AC2097E73500968E32 /* Utils */,
-				FEFD8DE920973D17005CD40F /* Entities */,
+				FEFD8DE720973D02005CD40F /* Storyboards */,
 				FEFD8DE820973D11005CD40F /* Views */,
 				FEDF44BC209804C600968E32 /* ViewModels */,
-				FEFD8DE720973D02005CD40F /* Storyboards */,
 				FEFD8DE620973CFB005CD40F /* Interactors */,
 				FEFD8DE520973CF0005CD40F /* Adapters */,
+				FEFD8DE920973D17005CD40F /* Entities */,
 				FEFD8DE420973CE1005CD40F /* App */,
-				FEFD8DC8209738FF005CD40F /* Main.storyboard */,
+				FEDF44AC2097E73500968E32 /* Utils */,
 				FEFD8DCB20973900005CD40F /* Assets.xcassets */,
 				FEFD8DCD20973900005CD40F /* LaunchScreen.storyboard */,
 				FEFD8DD020973900005CD40F /* Info.plist */,
@@ -285,7 +301,10 @@
 		FEFD8DE720973D02005CD40F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD8DC8209738FF005CD40F /* Main.storyboard */,
 				FEFD8E0F20977DF1005CD40F /* MainViewController.swift */,
+				FEBC9D8F2098B66A00B56220 /* FilterViewController.swift */,
+				FE88ADC520996B1400DDA696 /* ShopTypeViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -295,6 +314,8 @@
 			children = (
 				FEDF44BF209809CD00968E32 /* ProductCollectionViewCell.swift */,
 				FEDF44C0209809CD00968E32 /* ProductCollectionViewCell.xib */,
+				FE88ADCB209991DC00DDA696 /* ShopTypeCollectionViewCell.swift */,
+				FE88ADCC209991DC00DDA696 /* ShopTypeCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -438,6 +459,7 @@
 				FEFD8DCC20973900005CD40F /* Assets.xcassets in Resources */,
 				FEDF44C2209809CD00968E32 /* ProductCollectionViewCell.xib in Resources */,
 				FEFD8DCA209738FF005CD40F /* Main.storyboard in Resources */,
+				FE88ADCE209991DC00DDA696 /* ShopTypeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,9 +517,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mini-Tokopedia/Pods-Mini-Tokopedia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -509,9 +531,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -532,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE88ADC82099859E00DDA696 /* FilterViewModel.swift in Sources */,
 				FEFD8E0820976E75005CD40F /* LabelResponse.swift in Sources */,
 				FEFD8DF92097592A005CD40F /* ProductResponse.swift in Sources */,
 				FE88ADC22099373300DDA696 /* FilterInfo.swift in Sources */,
@@ -549,14 +572,18 @@
 				FEFD8E1020977DF1005CD40F /* MainViewController.swift in Sources */,
 				FEDF44B22097E80500968E32 /* Badge.swift in Sources */,
 				FEFD8E0620976A14005CD40F /* ShopResponse.swift in Sources */,
+				FE88ADC620996B1400DDA696 /* ShopTypeViewController.swift in Sources */,
 				FEDF44C1209809CD00968E32 /* ProductCollectionViewCell.swift in Sources */,
 				FEFD8DF120974242005CD40F /* ApiClient.swift in Sources */,
 				FE2DDB04209840BE00F800C5 /* UIImageView+Utils.swift in Sources */,
 				FEDF44B92097F0B400968E32 /* ProductViewParam.swift in Sources */,
+				FE88ADC42099379E00DDA696 /* NSNumber+Utils.swift in Sources */,
 				FEFD8DFB20975CE8005CD40F /* ProductListResponse.swift in Sources */,
 				FEFD8DFF20975E22005CD40F /* HeaderResponse.swift in Sources */,
 				FEFD8E04209768ED005CD40F /* CategoryListResponse.swift in Sources */,
+				FE88ADCD209991DC00DDA696 /* ShopTypeCollectionViewCell.swift in Sources */,
 				FEFD8E0120976844005CD40F /* WholesalePriceResponse.swift in Sources */,
+				FEBC9D902098B66A00B56220 /* FilterViewController.swift in Sources */,
 				FEFD8E122097903F005CD40F /* CategoryResponse.swift in Sources */,
 				FEDF44B42097E83D00968E32 /* Shop.swift in Sources */,
 				FEDF44B62097E8AC00968E32 /* WholesalePrice.swift in Sources */,
@@ -574,6 +601,7 @@
 				FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */,
 				FEDF44BB2097F81400968E32 /* ProductApiServiceMock.swift in Sources */,
 				FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */,
+				FE88ADCA209988DA00DDA696 /* FilterViewModelTest.swift in Sources */,
 				FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,7 +759,10 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -748,7 +779,10 @@
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-Tokopedia/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-Tokopedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -765,7 +799,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -783,7 +821,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA6UYG89K8;
 				INFOPLIST_FILE = "Mini-TokopediaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doddy.Mini-TokopediaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

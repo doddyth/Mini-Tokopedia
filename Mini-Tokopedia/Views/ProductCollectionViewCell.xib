@@ -26,14 +26,14 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Product title]" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cI-QR-VAD">
-                        <rect key="frame" x="12" y="231" width="207" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="12" y="231" width="207" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Price]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThT-jj-Frl">
-                        <rect key="frame" x="12" y="260" width="207" height="17"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <rect key="frame" x="12" y="255.5" width="207" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                         <color key="textColor" red="1" green="0.40000000000000002" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -48,7 +48,7 @@
                 <constraint firstItem="ThT-jj-Frl" firstAttribute="leading" secondItem="3cI-QR-VAD" secondAttribute="leading" id="dGU-4e-fFZ"/>
                 <constraint firstAttribute="trailing" secondItem="3cI-QR-VAD" secondAttribute="trailing" constant="12" id="hoC-0f-pl2"/>
                 <constraint firstAttribute="trailing" secondItem="VlP-d9-Fui" secondAttribute="trailing" constant="12" id="iB4-AQ-UbF"/>
-                <constraint firstItem="ThT-jj-Frl" firstAttribute="top" secondItem="3cI-QR-VAD" secondAttribute="bottom" constant="12" id="ioU-3Y-1Xd"/>
+                <constraint firstItem="ThT-jj-Frl" firstAttribute="top" secondItem="3cI-QR-VAD" secondAttribute="bottom" constant="10" id="ioU-3Y-1Xd"/>
                 <constraint firstItem="ThT-jj-Frl" firstAttribute="trailing" secondItem="3cI-QR-VAD" secondAttribute="trailing" id="wNb-Zy-pht"/>
             </constraints>
             <size key="customSize" width="231" height="297"/>

@@ -19,9 +19,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let productViewParam = productViewParam else { return }
             
-            self.productTitleLabel.text = productViewParam.name
-            self.productPriceLabel.text = productViewParam.price
-            self.productImage.loadUrl(productViewParam.imageURL)
+            productTitleLabel.text = productViewParam.name
+            productPriceLabel.text = productViewParam.price
+            productImage.loadUrl(productViewParam.imageURL)
         }
     }
 }
