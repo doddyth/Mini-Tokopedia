@@ -19,6 +19,7 @@
 		FE88ADCA209988DA00DDA696 /* FilterViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADC9209988DA00DDA696 /* FilterViewModelTest.swift */; };
 		FE88ADCD209991DC00DDA696 /* ShopTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADCB209991DC00DDA696 /* ShopTypeCollectionViewCell.swift */; };
 		FE88ADCE209991DC00DDA696 /* ShopTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE88ADCC209991DC00DDA696 /* ShopTypeCollectionViewCell.xib */; };
+		FE88ADD02099B0A400DDA696 /* DisplaySearchResultMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88ADCF2099B0A400DDA696 /* DisplaySearchResultMock.swift */; };
 		FEBC9D902098B66A00B56220 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBC9D8F2098B66A00B56220 /* FilterViewController.swift */; };
 		FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */; };
 		FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */; };
@@ -85,6 +86,7 @@
 		FE88ADC9209988DA00DDA696 /* FilterViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModelTest.swift; sourceTree = "<group>"; };
 		FE88ADCB209991DC00DDA696 /* ShopTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE88ADCC209991DC00DDA696 /* ShopTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		FE88ADCF2099B0A400DDA696 /* DisplaySearchResultMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResultMock.swift; sourceTree = "<group>"; };
 		FEBC9D8F2098B66A00B56220 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		FEDF449D2097D23000968E32 /* ApiResponseTestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseTestUtil.swift; sourceTree = "<group>"; };
 		FEDF44A02097DC2A00968E32 /* DisplaySearchResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchResultTest.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				FEDF44BA2097F81400968E32 /* ProductApiServiceMock.swift */,
+				FE88ADCF2099B0A400DDA696 /* DisplaySearchResultMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				FEFD8DF420974922005CD40F /* ApiClientTest.swift in Sources */,
 				FEDF44BB2097F81400968E32 /* ProductApiServiceMock.swift in Sources */,
 				FEDF449E2097D23000968E32 /* ApiResponseTestUtil.swift in Sources */,
+				FE88ADD02099B0A400DDA696 /* DisplaySearchResultMock.swift in Sources */,
 				FE88ADCA209988DA00DDA696 /* FilterViewModelTest.swift in Sources */,
 				FEDF44A12097DC2A00968E32 /* DisplaySearchResultTest.swift in Sources */,
 			);

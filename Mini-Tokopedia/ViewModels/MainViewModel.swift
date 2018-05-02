@@ -18,6 +18,9 @@ class MainViewModel {
     var errorShown: Variable<Bool> { return _errorShown }
     fileprivate var _errorShown: Variable<Bool> = Variable<Bool>(false)
     
+    var errorBannerShown: Variable<Bool> { return _errorBannerShown }
+    fileprivate var _errorBannerShown: Variable<Bool> = Variable<Bool>(false)
+    
     var productViewParams : Variable<[ProductViewParam]> { return _productViewParams }
     fileprivate var _productViewParams: Variable<[ProductViewParam]> = Variable<[ProductViewParam]>([ProductViewParam]())
     
@@ -36,6 +39,11 @@ class MainViewModel {
     }
     
     func didLoad() {
+        loadingShown.value = true
+        searchProduct(byKeyword: "samsung", page: currentPage, pageCount: pageCount)
+    }
+    
+    func tapRetry() {
         loadingShown.value = true
         searchProduct(byKeyword: "samsung", page: currentPage, pageCount: pageCount)
     }
@@ -61,6 +69,9 @@ class MainViewModel {
     //MARK: - Private
     
     fileprivate func searchProduct(byKeyword keyword: String, page: Int, pageCount: Int, filterInfo: FilterInfo? = nil) {
+        errorShown.value = false
+        errorBannerShown.value = false
+        
         self.displaySearchResult.searchProduct(byKeyword: keyword, page: page,
                                                pageCount: pageCount,
                                                filterInfo: filterInfo)
@@ -69,8 +80,11 @@ class MainViewModel {
                     self?._allProductLoaded = (productViewParams.count == 0 || productViewParams.count < 10)
                     self?._productViewParams.value.append(contentsOf: productViewParams)
                 }, onError: { [weak self] error in
-                    self?.loadingShown.value = false
-                    //todo: - show error toast
+                    guard let weakSelf = self else { return }
+                    
+                    weakSelf.loadingShown.value = false
+                    weakSelf.errorBannerShown.value = weakSelf._productViewParams.value.count > 0
+                    weakSelf.errorShown.value = weakSelf._productViewParams.value.count == 0
                 }, onCompleted: { [weak self] in
                 self?.loadingShown.value = false
             })

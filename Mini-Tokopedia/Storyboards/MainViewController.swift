@@ -17,6 +17,8 @@ class MainViewController: UIViewController, SeguePerformer {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var errorView: UIView!
+    @IBOutlet weak var errorBannerView: UIView!
     
     var mainViewModel: MainViewModel!
     var segueManager: SegueManager {
@@ -53,6 +55,10 @@ class MainViewController: UIViewController, SeguePerformer {
             filterViewController.delegate = self
             filterViewController.currentFilterInfo = self?.mainViewModel.currentFilterInfo
         }
+    }
+    
+    @IBAction func retryButtonTapped(_ sender: Any) {
+        mainViewModel.tapRetry()
     }
     
     //MARK: - Private
@@ -97,9 +103,40 @@ class MainViewController: UIViewController, SeguePerformer {
         
         mainViewModel.loadingShown
             .asDriver()
-            .drive(onNext: { [weak self] shown in
-                self?.loadingView.isHidden = !shown
+            .drive(onNext: { [weak self] loadingShown in
+                self?.loadingView.isHidden = !loadingShown
             })
+        
+        mainViewModel.errorShown
+            .asDriver()
+            .drive(onNext: { [weak self] errorShown in
+                self?.errorView.isHidden = !errorShown
+            })
+        
+        mainViewModel.errorBannerShown
+            .asDriver()
+            .drive(onNext: { [weak self] errorShown in
+                guard let weakSelf = self else { return }
+                if errorShown {
+                    weakSelf.productCollectionView.finishInfiniteScroll(completion: nil)
+                    weakSelf.animateShowAndHideErrorBanner()
+                } else {
+                    weakSelf.errorBannerView.isHidden = true
+                }
+            })
+    }
+    
+    fileprivate func animateShowAndHideErrorBanner() {
+        errorBannerView.isHidden = false
+        errorBannerView.alpha = 1
+        UIView.animate(withDuration: 0.5,
+                       delay: 2,
+                       options: .curveEaseInOut,
+                       animations: { [weak self] in
+                        self?.errorBannerView.alpha = 0
+            }, completion: { [weak self] _ in
+                self?.errorBannerView.isHidden = true
+        })
     }
 }
 
