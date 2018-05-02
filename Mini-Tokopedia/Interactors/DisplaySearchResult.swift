@@ -10,7 +10,8 @@ import Foundation
 import RxSwift
 
 protocol DisplaySearchResultProtocol {
-    func searchProduct(byKeyword keyword:String, page: Int, pageCount: Int)
+    func searchProduct(byKeyword keyword:String, page: Int, pageCount: Int,
+                       filterInfo: FilterInfo?)
         -> Observable<[ProductViewParam]>
 }
 
@@ -22,12 +23,13 @@ class DisplaySearchResult: DisplaySearchResultProtocol {
         self.productApiService = productApiService
     }
     
-    func searchProduct(byKeyword keyword: String, page: Int, pageCount: Int)
+    func searchProduct(byKeyword keyword: String, page: Int, pageCount: Int,
+                       filterInfo: FilterInfo?)
         -> Observable<[ProductViewParam]> {
             return productApiService.getProducts(byKeyword: keyword,
                                                  page: page,
                                                  pageCount: pageCount,
-                                                 filterInfo: nil)
+                                                 filterInfo: filterInfo)
                 .map { products -> [ProductViewParam] in
                     products.map{ ProductViewParam.create($0) }
                 }

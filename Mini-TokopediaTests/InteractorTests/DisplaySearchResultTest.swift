@@ -20,7 +20,8 @@ class DisplaySearchResultTest: XCTestCase {
         
         let products: [ProductViewParam] = try! displaySearchResult.searchProduct(byKeyword: "test",
                                                                                   page: 1,
-                                                                                  pageCount: 1)
+                                                                                  pageCount: 1,
+                                                                                  filterInfo: nil)
             .toBlocking()
             .first()!
         
@@ -36,7 +37,8 @@ class DisplaySearchResultTest: XCTestCase {
         let displaySearchResult = DisplaySearchResult(productApiService: productApiServiceFailMock)
         
         let expectationError = expectation(description: "searchProduct should error")
-        displaySearchResult.searchProduct(byKeyword: "test", page: 1, pageCount: 1)
+        displaySearchResult.searchProduct(byKeyword: "test", page: 1, pageCount: 1,
+                                          filterInfo: nil)
             .subscribe(onError: { error in
                 expectationError.fulfill()
             })

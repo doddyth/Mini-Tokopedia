@@ -12,7 +12,8 @@ import RxSwift
 @testable import Mini_Tokopedia
 
 class DisplaySearchResultMock: DisplaySearchResultProtocol {
-    func searchProduct(byKeyword keyword: String, page: Int, pageCount: Int)
+    func searchProduct(byKeyword keyword: String, page: Int, pageCount: Int,
+                       filterInfo: FilterInfo?)
         -> Observable<[ProductViewParam]> {
             var products = [ProductViewParam]()
             for i in 0..<10 {
