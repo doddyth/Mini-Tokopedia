@@ -13,6 +13,6 @@ struct FilterInfo {
     var minPrice: Int32 = 0
     var maxPrice: Int32 = 0
     var isWholeSale: Bool = false
-    var shopTypes: [String] = [String]()
+    var shopTypes: [ShopType] = [ShopType]()
     
 }

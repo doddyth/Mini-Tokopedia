@@ -67,7 +67,11 @@ class ProductApiService: ProductApiServiceProtocol {
         
         guard let filterInfo = filterInfo else { return initialPath }
         
+        let officialStoreParam = filterInfo.shopTypes.contains(.officialStore) ? "&official=true" : ""
+        let goldMerchantParam = filterInfo.shopTypes.contains(.goldMerchant) ? "&fshop=2" : ""
+        
         return initialPath + "&pmin=\(filterInfo.minPrice)&pmax=\(filterInfo.maxPrice)" +
-        "&wholesale=\(filterInfo.isWholeSale ? "true" : "false")"
+        "&wholesale=\(filterInfo.isWholeSale ? "true" : "false")" + officialStoreParam +
+        goldMerchantParam
     }
 }
