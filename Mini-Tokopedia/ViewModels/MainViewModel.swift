@@ -12,6 +12,12 @@ import RxSwift
 class MainViewModel {
     let displaySearchResult: DisplaySearchResultProtocol!
     
+    var loadingShown : Variable<Bool> { return _loadingShown }
+    fileprivate var _loadingShown: Variable<Bool> = Variable<Bool>(false)
+    
+    var errorShown: Variable<Bool> { return _errorShown }
+    fileprivate var _errorShown: Variable<Bool> = Variable<Bool>(false)
+    
     var productViewParams : Variable<[ProductViewParam]> { return _productViewParams }
     fileprivate var _productViewParams: Variable<[ProductViewParam]> = Variable<[ProductViewParam]>([ProductViewParam]())
     
@@ -30,6 +36,7 @@ class MainViewModel {
     }
     
     func didLoad() {
+        loadingShown.value = true
         searchProduct(byKeyword: "samsung", page: currentPage, pageCount: pageCount)
     }
     
@@ -45,6 +52,8 @@ class MainViewModel {
         currentFilterInfo = filterInfo
         currentPage = 1
         _productViewParams.value = [ProductViewParam]()
+        
+        loadingShown.value = true
         searchProduct(byKeyword: "samsung", page: currentPage, pageCount: pageCount,
                       filterInfo: currentFilterInfo)
     }
@@ -59,8 +68,11 @@ class MainViewModel {
                 onNext: { [weak self] productViewParams in
                     self?._allProductLoaded = (productViewParams.count == 0 || productViewParams.count < 10)
                     self?._productViewParams.value.append(contentsOf: productViewParams)
-                }, onError: { error in
+                }, onError: { [weak self] error in
+                    self?.loadingShown.value = false
                     //todo: - show error toast
+                }, onCompleted: { [weak self] in
+                self?.loadingShown.value = false
             })
             .disposed(by: disposeBag)
     }

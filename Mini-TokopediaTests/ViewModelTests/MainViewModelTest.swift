@@ -39,21 +39,40 @@ class MainViewModelTest: XCTestCase {
     }
     
     func testDidLoad() {
+        let loadingExpectation = expectation(description: "should send event loading shown")
+        loadingExpectation.expectedFulfillmentCount = 3
+        
         let productViewParamsExpectation = expectation(description: "should send event product view params")
         productViewParamsExpectation.expectedFulfillmentCount = 2
         
-        var counter: Int = 0
+        var counterLoading: Int = 0
+        mainViewModel?.loadingShown
+            .asObservable()
+            .subscribe(onNext: { loadingShown in
+                if counterLoading == 0 {
+                    XCTAssertFalse(loadingShown)
+                } else if counterLoading == 1 {
+                    XCTAssertTrue(loadingShown)
+                } else if counterLoading == 2 {
+                    XCTAssertFalse(loadingShown)
+                }
+                
+                loadingExpectation.fulfill()
+                counterLoading += 1
+            })
+        
+        var counterProduct: Int = 0
         mainViewModel?.productViewParams
             .asObservable()
             .subscribe(onNext: { products in
-                if counter == 0 {
+                if counterProduct == 0 {
                     XCTAssertEqual(products.count, 0)
                 } else {
                     XCTAssertEqual(products.count, 10)
                 }
                 
                 productViewParamsExpectation.fulfill()
-                counter += 1
+                counterProduct += 1
             })
         
         mainViewModel?.didLoad()

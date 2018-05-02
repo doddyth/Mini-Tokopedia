@@ -24,7 +24,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ziv-0r-Yl3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
-                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="QJq-Fm-3Eq">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -42,6 +42,23 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-LH-4W0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-lJ-4fW">
+                                        <rect key="frame" x="168" y="257" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="FRn-fm-0bj"/>
+                                            <constraint firstAttribute="height" constant="40" id="Jhy-5O-yM1"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dsw-lJ-4fW" firstAttribute="centerY" secondItem="HZn-LH-4W0" secondAttribute="centerY" id="fmY-Zt-eOr"/>
+                                    <constraint firstItem="Dsw-lJ-4fW" firstAttribute="centerX" secondItem="HZn-LH-4W0" secondAttribute="centerX" id="gWx-Gi-8cb"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqY-np-iIG">
                                 <rect key="frame" x="0.0" y="553" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.66666666669999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,17 +76,22 @@
                         </subviews>
                         <color key="backgroundColor" white="0.95193142361111116" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="lqY-np-iIG" firstAttribute="top" secondItem="HZn-LH-4W0" secondAttribute="bottom" id="22k-lI-IMe"/>
                             <constraint firstItem="ziv-0r-Yl3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="5KV-XM-FOO"/>
                             <constraint firstItem="hQ1-NL-DzZ" firstAttribute="top" secondItem="lqY-np-iIG" secondAttribute="bottom" id="9Xr-Js-ZZh"/>
                             <constraint firstItem="ziv-0r-Yl3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N8h-x0-Hop"/>
                             <constraint firstAttribute="trailing" secondItem="lqY-np-iIG" secondAttribute="trailing" id="Q26-8k-6DJ"/>
                             <constraint firstItem="lqY-np-iIG" firstAttribute="top" secondItem="ziv-0r-Yl3" secondAttribute="bottom" id="QGB-qI-59T"/>
                             <constraint firstItem="lqY-np-iIG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qey-Mn-fsF"/>
+                            <constraint firstAttribute="trailing" secondItem="HZn-LH-4W0" secondAttribute="trailing" id="WLg-sI-6q4"/>
+                            <constraint firstItem="HZn-LH-4W0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dHT-ek-4VR"/>
+                            <constraint firstItem="HZn-LH-4W0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lfL-Rc-Pcr"/>
                             <constraint firstItem="ziv-0r-Yl3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rXv-1Z-iYP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="O5g-Ny-Sp5"/>
                     <connections>
+                        <outlet property="loadingView" destination="HZn-LH-4W0" id="iGk-e9-pfH"/>
                         <outlet property="productCollectionView" destination="ziv-0r-Yl3" id="vhN-FF-PL5"/>
                     </connections>
                 </viewController>

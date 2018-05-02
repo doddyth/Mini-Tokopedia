@@ -16,6 +16,7 @@ import SegueManager
 class MainViewController: UIViewController, SeguePerformer {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
+    @IBOutlet weak var loadingView: UIView!
     
     var mainViewModel: MainViewModel!
     var segueManager: SegueManager {
@@ -93,6 +94,12 @@ class MainViewController: UIViewController, SeguePerformer {
                     cell.productViewParam = productViewParam
             }
             .disposed(by: disposeBag)
+        
+        mainViewModel.loadingShown
+            .asDriver()
+            .drive(onNext: { [weak self] shown in
+                self?.loadingView.isHidden = !shown
+            })
     }
 }
 
